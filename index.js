@@ -31,8 +31,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
 });
 
-
+require("./app/comun/carousel/caousel.directives");
 require("./app/comun/menu.directives");
 require("./app/accueil/accueil.controller");
 require("./app/formations/formation.controller");
-

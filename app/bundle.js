@@ -72,6 +72,7 @@
 	    });
 	});
 
+	__webpack_require__(27);
 	__webpack_require__(17);
 	__webpack_require__(18);
 	__webpack_require__(26);
@@ -13098,7 +13099,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}", ""]);
+	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}\r\n\r\n\r\n\r\n\r\n.src-image {\r\n  display: none;\r\n}\r\n\r\n.card {\r\n  overflow: hidden;\r\n  position: relative;\r\n  border: 1px solid #CCC;\r\n  border-radius: 8px;\r\n  text-align: center;\r\n  padding: 0;\r\n  background-color: #284c79;\r\n  color: rgb(136, 172, 217);\r\n}\r\n\r\n.card .header-bg {\r\n  /* This stretches the canvas across the entire hero unit */\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 70px;\r\n  border-bottom: 1px #FFF solid;\r\n  /* This positions the canvas under the text */\r\n  z-index: 1;\r\n}\r\n.card .avatar {\r\n  position: relative;\r\n  margin-top: 15px;\r\n  z-index: 100;\r\n}\r\n\r\n.card .avatar img {\r\n  width: 100px;\r\n  height: 100px;\r\n  -webkit-border-radius: 50%;\r\n  -moz-border-radius: 50%;\r\n  border-radius: 50%;\r\n  border: 5px solid rgba(0,0,30,0.8);\r\n}\r\n", ""]);
 
 	// exports
 
@@ -50142,6 +50143,7 @@
 	    AccCtrl.formation = AccueilFactory.formation.then(function (res) {
 	        AccCtrl.formation = res.data.listeFrm;
 	        AccCtrl.titleFormation = res.data.title;
+	        AccCtrl.descriptionGenFor = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50149,6 +50151,7 @@
 	    AccCtrl.experiences = AccueilFactory.experiences.then(function (res) {
 	        AccCtrl.experiences = res.data.listeExp;
 	        AccCtrl.titleExperiences = res.data.title;
+	        AccCtrl.descriptionGenExp = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50156,6 +50159,7 @@
 	    AccCtrl.contact = AccueilFactory.contact.then(function (res) {
 	        AccCtrl.contact = res.data.listeCont;
 	        AccCtrl.titleContact = res.data.title;
+	        AccCtrl.descriptionGenCtc = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50163,6 +50167,7 @@
 	    AccCtrl.langues = AccueilFactory.langues.then(function (res) {
 	        AccCtrl.langues = res.data.listeLg;
 	        AccCtrl.titleLangues = res.data.title;
+	        AccCtrl.descriptionGenLg = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50170,6 +50175,7 @@
 	    AccCtrl.loisirs = AccueilFactory.loisirs.then(function (res) {
 	        AccCtrl.loisirs = res.data.listeLoisir;
 	        AccCtrl.titleLoisirs = res.data.title;
+	        AccCtrl.descriptionGenLois = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50177,7 +50183,7 @@
 	    AccCtrl.projets = AccueilFactory.projets.then(function (res) {
 	        AccCtrl.projets = res.data.listeProjets;
 	        AccCtrl.titleProjets = res.data.title;
-	        console.log(res.data.listeProjets);
+	        AccCtrl.descriptionGenPrj = res.data.descriptionGen;
 	    }, function (err) {
 	        console.log(err);
 	    });
@@ -50380,6 +50386,20 @@
 	}
 	FormationControllerFct.$inject = ['FormationFactory'];
 	angular.module('myApp').controller('FormationController', FormationControllerFct);
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function menuFct() {
+	    return {
+	        restrict: 'E',
+	        templateUrl: 'comun/carousel/liste.html'
+	    };
+	}
+	angular.module('myApp').directive('carouselDirective', menuFct);
 
 /***/ }
 /******/ ]);

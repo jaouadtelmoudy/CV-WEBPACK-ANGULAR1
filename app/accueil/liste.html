@@ -1,70 +1,73 @@
 
 
 <div class="container">
-
     <div class="row row-offcanvas row-offcanvas-right">
-
         <div class="col-xs-12 col-sm-9">
-            <p class="float-xs-right hidden-sm-up">
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-            </p>
-            <div class="jumbotron">
-                <h1>Hello, world!</h1>
-                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-            </div>
+<div class="jumbotron">
+  <carousel-directive></carousel-directive>
+</div>
             <div class="row">
                 <div class="col-xs-6 col-lg-4">
                     <h2>{{AccCtrl.titleFormation}}</h2>
-                    <p>{{AccCtrl.formation.description}}. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p>{{AccCtrl.descriptionGenFor}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>{{AccCtrl.titleExperiences}}</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p>{{AccCtrl.descriptionGenExp}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-xs-6 col-lg-4">
                       <h2>{{AccCtrl.titleProjets}}</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p>{{AccCtrl.descriptionGenPrj}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-xs-6 col-lg-4">
                       <h2>{{AccCtrl.titleContact}}</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                  <p>{{AccCtrl.descriptionGenCtc}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>{{AccCtrl.titleLoisirs}}</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p>{{AccCtrl.descriptionGenLois}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>{{AccCtrl.titleLangues}}</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p>{{AccCtrl.descriptionGenLg}}. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Détails &raquo;</a></p>
                 </div><!--/span-->
             </div><!--/row-->
         </div><!--/span-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-            </div>
+          <div class="container">
+
+  <div class="row">
+      <div class="col-sm-3">
+          <div class="card">
+              <canvas class="header-bg" width="250" height="70" id="header-blur"></canvas>
+              <div class="avatar">
+                  <img src="images/photo.jpg" alt="" />
+              </div>
+              <div class="content">
+                  <p>Web Developer <br>
+                     More description here</p>
+                  <p><button type="button" class="btn btn-default">Contact</button></p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+ 
         </div><!--/span-->
     </div><!--/row-->
 
     <hr>
 
-  <
+
 
 </div><!--/.container-->
 

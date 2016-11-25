@@ -1,8 +1,10 @@
-
+var webpack=require("webpack");
+var path=require("path");
 module.exports={
     context: __dirname ,
     entry: "./index",
     output: {
+        //path: path.join(__dirname, "app"),
         path: __dirname + "/app",
         filename: "bundle.js"
     },

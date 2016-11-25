@@ -72,10 +72,11 @@
 	    });
 	});
 
-	__webpack_require__(27);
 	__webpack_require__(17);
 	__webpack_require__(18);
-	__webpack_require__(26);
+	__webpack_require__(19);
+	__webpack_require__(20);
+	__webpack_require__(28);
 
 /***/ },
 /* 1 */
@@ -13099,7 +13100,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}\r\n\r\n\r\n\r\n\r\n.src-image {\r\n  display: none;\r\n}\r\n\r\n.card {\r\n  overflow: hidden;\r\n  position: relative;\r\n  border: 1px solid #CCC;\r\n  border-radius: 8px;\r\n  text-align: center;\r\n  padding: 0;\r\n  background-color: #284c79;\r\n  color: rgb(136, 172, 217);\r\n}\r\n\r\n.card .header-bg {\r\n  /* This stretches the canvas across the entire hero unit */\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 70px;\r\n  border-bottom: 1px #FFF solid;\r\n  /* This positions the canvas under the text */\r\n  z-index: 1;\r\n}\r\n.card .avatar {\r\n  position: relative;\r\n  margin-top: 15px;\r\n  z-index: 100;\r\n}\r\n\r\n.card .avatar img {\r\n  width: 100px;\r\n  height: 100px;\r\n  -webkit-border-radius: 50%;\r\n  -moz-border-radius: 50%;\r\n  border-radius: 50%;\r\n  border: 5px solid rgba(0,0,30,0.8);\r\n}\r\n", ""]);
+	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}\r\n\r\n\r\n\r\n.card {\r\n    padding-top: 20px;\r\n    margin: 10px 0 20px 0;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n    border-top-width: 0;\r\n    border-bottom-width: 2px;\r\n    -webkit-border-radius: 3px;\r\n    -moz-border-radius: 3px;\r\n    border-radius: 3px;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card .card-heading {\r\n    padding: 0 20px;\r\n    margin: 0;\r\n}\r\n\r\n.card .card-heading.simple {\r\n    font-size: 20px;\r\n    font-weight: 300;\r\n    color: #777;\r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.card .card-heading.image img {\r\n    display: inline-block;\r\n    width: 46px;\r\n    height: 46px;\r\n    margin-right: 15px;\r\n    vertical-align: top;\r\n    border: 0;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header h3 {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    color: #262626;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header span {\r\n    font-size: 12px;\r\n    color: #999999;\r\n}\r\n\r\n.card .card-body {\r\n    padding: 0 20px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.card .card-media {\r\n    padding: 0 20px;\r\n    margin: 0 -14px;\r\n}\r\n\r\n.card .card-media img {\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n.card .card-actions {\r\n    min-height: 30px;\r\n    padding: 0 20px 20px 20px;\r\n    margin: 20px 0 0 0;\r\n}\r\n\r\n.card .card-comments {\r\n    padding: 20px;\r\n    margin: 0;\r\n    background-color: #f8f8f8;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle {\r\n    padding: 0;\r\n    margin: 0 20px 12px 20px;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle a,\r\n.card .card-comments .comments-collapse-toggle span {\r\n    padding-right: 5px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    color: #999;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n}\r\n\r\n.card-comments .media-heading {\r\n    font-size: 13px;\r\n    font-weight: bold;\r\n}\r\n\r\n.card.people {\r\n    position: relative;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 300px;\r\n    padding-top: 0;\r\n    margin-left: 20px;\r\n    overflow: hidden;\r\n    vertical-align: top;\r\n}\r\n\r\n.card.people:first-child {\r\n    margin-left: 0;\r\n}\r\n\r\n.card.people .card-top {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 150px;\r\n    background-color: #ffffff;\r\n}\r\n\r\n.card.people .card-top.green {\r\n    background-color: #53a93f;\r\n}\r\n\r\n.card.people .card-top.blue {\r\n    background-color: #427fed;\r\n}\r\n\r\n.card.people .card-info {\r\n    position: absolute;\r\n    top: 150px;\r\n    display: inline-block;\r\n    width: 100%;\r\n    height: 101px;\r\n    overflow: hidden;\r\n    background: #ffffff;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.people .card-info .title {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    line-height: 18px;\r\n    color: #404040;\r\n}\r\n\r\n.card.people .card-info .desc {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.people .card-bottom {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 100%;\r\n    padding: 10px 20px;\r\n    line-height: 29px;\r\n    text-align: center;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.hovercard {\r\n    position: relative;\r\n    padding-top: 0;\r\n    overflow: hidden;\r\n    text-align: center;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n}\r\n\r\n.card.hovercard .cardheader {\r\n/*    background: url(\"../../images/webpack.jpg\");*/\r\n    background-size: cover;\r\n    height: 47px;\r\n}\r\n\r\n.card.hovercard .avatar {\r\n    position: relative;\r\n    top: -50px;\r\n    margin-bottom: -50px;\r\n}\r\n\r\n.card.hovercard .avatar img {\r\n    width: 100px;\r\n    height: 100px;\r\n    max-width: 100px;\r\n    max-height: 100px;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n    border: 5px solid rgba(255,255,255,0.5);\r\n}\r\n\r\n.card.hovercard .info {\r\n    padding: 4px 8px 10px;\r\n}\r\n\r\n.card.hovercard .info .title {\r\n    margin-bottom: 4px;\r\n    font-size: 24px;\r\n    line-height: 1;\r\n    color: #262626;\r\n    vertical-align: middle;\r\n}\r\n\r\n.card.hovercard .info .desc {\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 20px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.hovercard .bottom {\r\n    padding: 0 20px;\r\n    margin-bottom: 17px;\r\n}\r\n\r\n.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }\r\n", ""]);
 
 	// exports
 
@@ -50124,18 +50125,55 @@
 	function menuFct() {
 	    return {
 	        restrict: 'E',
+	        templateUrl: 'comun/carousel/liste.html'
+	    };
+	}
+	angular.module('myApp').directive('carouselDirective', menuFct);
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function menuFct() {
+	    function ProfilController() {
+	        var PrfCtrl = this;
+	        PrfCtrl.text = "Jaouad TELMOUDY ";
+	    }
+	    return {
+	        restrict: 'E',
+	        templateUrl: 'comun/profil/liste.html',
+	        controller: ProfilController,
+	        controllerAs: 'PrfCtrl',
+	        link: function (scope, element, param) {
+	            scope.text = scope.text + "Deuxième";
+	        }
+	    };
+	}
+	angular.module('myApp').directive('profilDirective', menuFct);
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function menuFct() {
+	    return {
+	        restrict: 'E',
 	        templateUrl: 'comun/menu.html'
 	    };
 	}
 	angular.module('myApp').directive('menu', menuFct);
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(19);
+	__webpack_require__(21);
 
 	function AccCtrlFunction(AccueilFactory) {
 	    var AccCtrl = this;
@@ -50193,17 +50231,17 @@
 	angular.module('myApp').controller('AccueilController', AccCtrlFunction);
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(20);
-	__webpack_require__(21);
 	__webpack_require__(22);
 	__webpack_require__(23);
 	__webpack_require__(24);
 	__webpack_require__(25);
+	__webpack_require__(26);
+	__webpack_require__(27);
 	function AccueilFactoryFct($http, FormationFactory, ExperienceFactory, ContactFactory, LanguesFactory, LoisirsFactory, ProjetsFactory) {
 	    var service = {};
 	    service.formation = FormationFactory.getListe();
@@ -50218,7 +50256,7 @@
 	angular.module('myApp').factory('AccueilFactory', AccueilFactoryFct);
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50243,7 +50281,7 @@
 	angular.module('myApp').factory('FormationFactory', FormationFactoryFct);
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50268,7 +50306,7 @@
 	angular.module('myApp').factory('ExperienceFactory', ExperienceFactoryFct);
 
 /***/ },
-/* 22 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50293,7 +50331,7 @@
 	angular.module('myApp').factory('ContactFactory', ContactFactoryFct);
 
 /***/ },
-/* 23 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50318,7 +50356,7 @@
 	angular.module('myApp').factory('LanguesFactory', LanguesFactoryFct);
 
 /***/ },
-/* 24 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50343,7 +50381,7 @@
 	angular.module('myApp').factory('LoisirsFactory', LoisirsFactoryFct);
 
 /***/ },
-/* 25 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50368,12 +50406,12 @@
 	angular.module('myApp').factory('ProjetsFactory', ProjetsFactoryFct);
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(20);
+	__webpack_require__(22);
 	function FormationControllerFct(FormationFactory) {
 
 	    var FrmCtrl = this;
@@ -50386,20 +50424,6 @@
 	}
 	FormationControllerFct.$inject = ['FormationFactory'];
 	angular.module('myApp').controller('FormationController', FormationControllerFct);
-
-/***/ },
-/* 27 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function menuFct() {
-	    return {
-	        restrict: 'E',
-	        templateUrl: 'comun/carousel/liste.html'
-	    };
-	}
-	angular.module('myApp').directive('carouselDirective', menuFct);
 
 /***/ }
 /******/ ]);

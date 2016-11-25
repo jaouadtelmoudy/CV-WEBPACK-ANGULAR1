@@ -72,10 +72,10 @@
 	    });
 	});
 
-	__webpack_require__(27);
 	__webpack_require__(17);
-	__webpack_require__(18);
-	__webpack_require__(26);
+	__webpack_require__(19);
+	__webpack_require__(20);
+	__webpack_require__(28);
 
 /***/ },
 /* 1 */
@@ -50124,18 +50124,33 @@
 	function menuFct() {
 	    return {
 	        restrict: 'E',
+	        templateUrl: 'comun/carousel/liste.html'
+	    };
+	}
+	angular.module('myApp').directive('carouselDirective', menuFct);
+
+/***/ },
+/* 18 */,
+/* 19 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function menuFct() {
+	    return {
+	        restrict: 'E',
 	        templateUrl: 'comun/menu.html'
 	    };
 	}
 	angular.module('myApp').directive('menu', menuFct);
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(19);
+	__webpack_require__(21);
 
 	function AccCtrlFunction(AccueilFactory) {
 	    var AccCtrl = this;
@@ -50193,17 +50208,17 @@
 	angular.module('myApp').controller('AccueilController', AccCtrlFunction);
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(20);
-	__webpack_require__(21);
 	__webpack_require__(22);
 	__webpack_require__(23);
 	__webpack_require__(24);
 	__webpack_require__(25);
+	__webpack_require__(26);
+	__webpack_require__(27);
 	function AccueilFactoryFct($http, FormationFactory, ExperienceFactory, ContactFactory, LanguesFactory, LoisirsFactory, ProjetsFactory) {
 	    var service = {};
 	    service.formation = FormationFactory.getListe();
@@ -50218,7 +50233,7 @@
 	angular.module('myApp').factory('AccueilFactory', AccueilFactoryFct);
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50243,7 +50258,7 @@
 	angular.module('myApp').factory('FormationFactory', FormationFactoryFct);
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50268,7 +50283,7 @@
 	angular.module('myApp').factory('ExperienceFactory', ExperienceFactoryFct);
 
 /***/ },
-/* 22 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50293,7 +50308,7 @@
 	angular.module('myApp').factory('ContactFactory', ContactFactoryFct);
 
 /***/ },
-/* 23 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50318,7 +50333,7 @@
 	angular.module('myApp').factory('LanguesFactory', LanguesFactoryFct);
 
 /***/ },
-/* 24 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50343,7 +50358,7 @@
 	angular.module('myApp').factory('LoisirsFactory', LoisirsFactoryFct);
 
 /***/ },
-/* 25 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50368,12 +50383,12 @@
 	angular.module('myApp').factory('ProjetsFactory', ProjetsFactoryFct);
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(20);
+	__webpack_require__(22);
 	function FormationControllerFct(FormationFactory) {
 
 	    var FrmCtrl = this;
@@ -50386,20 +50401,6 @@
 	}
 	FormationControllerFct.$inject = ['FormationFactory'];
 	angular.module('myApp').controller('FormationController', FormationControllerFct);
-
-/***/ },
-/* 27 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function menuFct() {
-	    return {
-	        restrict: 'E',
-	        templateUrl: 'comun/carousel/liste.html'
-	    };
-	}
-	angular.module('myApp').directive('carouselDirective', menuFct);
 
 /***/ }
 /******/ ]);

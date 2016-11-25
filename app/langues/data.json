@@ -1,0 +1,13 @@
+{
+  "title":"Langues",
+  "listeLg":[{
+    "langue":"Français",
+    "niveau":"Lu Parlé Ecrit"
+  },{
+    "langue":"Anglais",
+    "niveau":"Langue Technique"
+  },{
+    "langue":"Arab",
+    "niveau":"Langue Maternelle"
+  }]
+}

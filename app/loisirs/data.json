@@ -1,0 +1,10 @@
+{
+  "title":"Loisirs",
+  "listeLoisir":[{
+    "libelle":"Sport"
+  },{
+    "libelle":"Voyage"
+  },{
+    "libelle":"Cinéma"
+  }]
+}

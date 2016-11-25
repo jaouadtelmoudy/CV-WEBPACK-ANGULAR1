@@ -74,9 +74,9 @@
 
 	__webpack_require__(17);
 	__webpack_require__(18);
-	__webpack_require__(19);
 	__webpack_require__(20);
-	__webpack_require__(28);
+	__webpack_require__(21);
+	__webpack_require__(29);
 
 /***/ },
 /* 1 */
@@ -50132,22 +50132,29 @@
 
 /***/ },
 /* 18 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
+	__webpack_require__(19);
 	function menuFct() {
-	    function ProfilController() {
+	    function ProfilController(ProfilFactory) {
 	        var PrfCtrl = this;
 	        PrfCtrl.text = "Jaouad TELMOUDY ";
+	        ProfilFactory.getListe().then(function (res) {
+	            PrfCtrl.profil = res.data;
+	        }, function (err) {
+	            console.log(err);
+	        });
 	    }
+	    ProfilController.$inject = ['ProfilFactory'];
 	    return {
 	        restrict: 'E',
 	        templateUrl: 'comun/profil/liste.html',
 	        controller: ProfilController,
 	        controllerAs: 'PrfCtrl',
 	        link: function (scope, element, param) {
-	            scope.text = scope.text + "Deuxième";
+	            //scope.text = scope.text + "Deuxième";
 	        }
 	    };
 	}
@@ -50155,6 +50162,31 @@
 
 /***/ },
 /* 19 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function ProfilFactoryFct($http, $q) {
+
+	    var service = {};
+	    service.getListe = function () {
+	        var deferred = $q.defer();
+	        return $http({
+	            method: 'GET',
+	            url: 'comun/profil/data.json'
+	        }).success(function (result) {
+	            return deferred.resolve(result);
+	        }).error(function (data) {
+	            return deferred.reject(data);
+	        });
+	    };
+	    return service;
+	}
+	ProfilFactoryFct.$inject = ['$http', '$q'];
+	angular.module('myApp').factory('ProfilFactory', ProfilFactoryFct);
+
+/***/ },
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50168,12 +50200,12 @@
 	angular.module('myApp').directive('menu', menuFct);
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(21);
+	__webpack_require__(22);
 
 	function AccCtrlFunction(AccueilFactory) {
 	    var AccCtrl = this;
@@ -50231,17 +50263,17 @@
 	angular.module('myApp').controller('AccueilController', AccCtrlFunction);
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(22);
 	__webpack_require__(23);
 	__webpack_require__(24);
 	__webpack_require__(25);
 	__webpack_require__(26);
 	__webpack_require__(27);
+	__webpack_require__(28);
 	function AccueilFactoryFct($http, FormationFactory, ExperienceFactory, ContactFactory, LanguesFactory, LoisirsFactory, ProjetsFactory) {
 	    var service = {};
 	    service.formation = FormationFactory.getListe();
@@ -50256,7 +50288,7 @@
 	angular.module('myApp').factory('AccueilFactory', AccueilFactoryFct);
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50281,7 +50313,7 @@
 	angular.module('myApp').factory('FormationFactory', FormationFactoryFct);
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50306,7 +50338,7 @@
 	angular.module('myApp').factory('ExperienceFactory', ExperienceFactoryFct);
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50331,7 +50363,7 @@
 	angular.module('myApp').factory('ContactFactory', ContactFactoryFct);
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50356,7 +50388,7 @@
 	angular.module('myApp').factory('LanguesFactory', LanguesFactoryFct);
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50381,7 +50413,7 @@
 	angular.module('myApp').factory('LoisirsFactory', LoisirsFactoryFct);
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50406,12 +50438,12 @@
 	angular.module('myApp').factory('ProjetsFactory', ProjetsFactoryFct);
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(22);
+	__webpack_require__(23);
 	function FormationControllerFct(FormationFactory) {
 
 	    var FrmCtrl = this;

@@ -1,13 +1,12 @@
 'use strict';
-function ExperienceFactoryFct($http,$q) {
+function ProfilFactoryFct($http,$q) {
 
     var service = {};
     service.getListe = function () {
         var deferred = $q.defer();
         return $http({
             method : 'GET',
-            url : 'experiences/data.json',
-            // params : {"login"  :login,    "password":pass}
+            url : 'comun/profil/data.json',
         }).success(function(result){
             return deferred.resolve(result);
         }).error(function(data){
@@ -16,6 +15,6 @@ function ExperienceFactoryFct($http,$q) {
     }
     return service;
 }
-ExperienceFactoryFct.$inject=['$http','$q'];
-angular.module('myApp').factory('ExperienceFactory',ExperienceFactoryFct);
+ProfilFactoryFct.$inject=['$http','$q'];
+angular.module('myApp').factory('ProfilFactory',ProfilFactoryFct);
 

@@ -48,6 +48,7 @@
 	__webpack_require__(2);
 	__webpack_require__(3);
 	__webpack_require__(12);
+
 	var angular = __webpack_require__(14);
 	var angularui = __webpack_require__(16);
 	var myApp = angular.module("myApp", [angularui]);
@@ -74,6 +75,21 @@
 	        templateUrl: 'projets/liste.html',
 	        controller: 'ProjetsController',
 	        controllerAs: 'PrjCtrl'
+	    }).state('loisirs', {
+	        url: '/loisirs',
+	        templateUrl: 'loisirs/liste.html',
+	        controller: 'LoisirsController',
+	        controllerAs: 'LoiCtrl'
+	    }).state('langues', {
+	        url: '/langues',
+	        templateUrl: 'langues/liste.html',
+	        controller: 'LanguesController',
+	        controllerAs: 'LgCtrl'
+	    }).state('contact', {
+	        url: '/contact',
+	        templateUrl: 'contact/liste.html',
+	        controller: 'ContactController',
+	        controllerAs: 'ContCtrl'
 	    });
 	});
 
@@ -84,6 +100,9 @@
 	__webpack_require__(29);
 	__webpack_require__(30);
 	__webpack_require__(31);
+	__webpack_require__(32);
+	__webpack_require__(33);
+	__webpack_require__(42);
 
 /***/ },
 /* 1 */
@@ -13107,7 +13126,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}\r\n\r\n\r\n\r\n.card {\r\n    padding-top: 20px;\r\n    margin: 10px 0 20px 0;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n    border-top-width: 0;\r\n    border-bottom-width: 2px;\r\n    -webkit-border-radius: 3px;\r\n    -moz-border-radius: 3px;\r\n    border-radius: 3px;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card .card-heading {\r\n    padding: 0 20px;\r\n    margin: 0;\r\n}\r\n\r\n.card .card-heading.simple {\r\n    font-size: 20px;\r\n    font-weight: 300;\r\n    color: #777;\r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.card .card-heading.image img {\r\n    display: inline-block;\r\n    width: 46px;\r\n    height: 46px;\r\n    margin-right: 15px;\r\n    vertical-align: top;\r\n    border: 0;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header h3 {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    color: #262626;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header span {\r\n    font-size: 12px;\r\n    color: #999999;\r\n}\r\n\r\n.card .card-body {\r\n    padding: 0 20px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.card .card-media {\r\n    padding: 0 20px;\r\n    margin: 0 -14px;\r\n}\r\n\r\n.card .card-media img {\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n.card .card-actions {\r\n    min-height: 30px;\r\n    padding: 0 20px 20px 20px;\r\n    margin: 20px 0 0 0;\r\n}\r\n\r\n.card .card-comments {\r\n    padding: 20px;\r\n    margin: 0;\r\n    background-color: #f8f8f8;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle {\r\n    padding: 0;\r\n    margin: 0 20px 12px 20px;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle a,\r\n.card .card-comments .comments-collapse-toggle span {\r\n    padding-right: 5px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    color: #999;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n}\r\n\r\n.card-comments .media-heading {\r\n    font-size: 13px;\r\n    font-weight: bold;\r\n}\r\n\r\n.card.people {\r\n    position: relative;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 300px;\r\n    padding-top: 0;\r\n    margin-left: 20px;\r\n    overflow: hidden;\r\n    vertical-align: top;\r\n}\r\n\r\n.card.people:first-child {\r\n    margin-left: 0;\r\n}\r\n\r\n.card.people .card-top {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 150px;\r\n    background-color: #ffffff;\r\n}\r\n\r\n.card.people .card-top.green {\r\n    background-color: #53a93f;\r\n}\r\n\r\n.card.people .card-top.blue {\r\n    background-color: #427fed;\r\n}\r\n\r\n.card.people .card-info {\r\n    position: absolute;\r\n    top: 150px;\r\n    display: inline-block;\r\n    width: 100%;\r\n    height: 101px;\r\n    overflow: hidden;\r\n    background: #ffffff;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.people .card-info .title {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    line-height: 18px;\r\n    color: #404040;\r\n}\r\n\r\n.card.people .card-info .desc {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.people .card-bottom {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 100%;\r\n    padding: 10px 20px;\r\n    line-height: 29px;\r\n    text-align: center;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.hovercard {\r\n    position: relative;\r\n    padding-top: 0;\r\n    overflow: hidden;\r\n    text-align: center;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n}\r\n\r\n.card.hovercard .cardheader {\r\n/*    background: url(\"../../images/webpack.jpg\");*/\r\n    background-size: cover;\r\n    height: 47px;\r\n}\r\n\r\n.card.hovercard .avatar {\r\n    position: relative;\r\n    top: -50px;\r\n    margin-bottom: -50px;\r\n}\r\n\r\n.card.hovercard .avatar img {\r\n    width: 100px;\r\n    height: 100px;\r\n    max-width: 100px;\r\n    max-height: 100px;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n    border: 5px solid rgba(255,255,255,0.5);\r\n}\r\n\r\n.card.hovercard .info {\r\n    padding: 4px 8px 10px;\r\n}\r\n\r\n.card.hovercard .info .title {\r\n    margin-bottom: 4px;\r\n    font-size: 24px;\r\n    line-height: 1;\r\n    color: #262626;\r\n    vertical-align: middle;\r\n}\r\n\r\n.card.hovercard .info .desc {\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 20px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.hovercard .bottom {\r\n    padding: 0 20px;\r\n    margin-bottom: 17px;\r\n}\r\n\r\n.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }\r\n", ""]);
+	exports.push([module.id, "/*\r\n * Style tweaks\r\n * --------------------------------------------------\r\n */\r\nhtml,\r\nbody {\r\n    overflow-x: hidden; /* Prevent scroll on narrow devices */\r\n}\r\nbody {\r\n    padding-top: 70px;\r\n}\r\nfooter {\r\n    padding: 30px 0;\r\n}\r\n\r\n/*\r\n * Off Canvas\r\n * --------------------------------------------------\r\n */\r\n@media screen and (max-width: 767px) {\r\n    .row-offcanvas {\r\n        position: relative;\r\n        -webkit-transition: all .25s ease-out;\r\n        -o-transition: all .25s ease-out;\r\n        transition: all .25s ease-out;\r\n    }\r\n\r\n    .row-offcanvas-right {\r\n        right: 0;\r\n    }\r\n\r\n    .row-offcanvas-left {\r\n        left: 0;\r\n    }\r\n\r\n    .row-offcanvas-right\r\n    .sidebar-offcanvas {\r\n        right: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left\r\n    .sidebar-offcanvas {\r\n        left: -50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-right.active {\r\n        right: 50%; /* 6 columns */\r\n    }\r\n\r\n    .row-offcanvas-left.active {\r\n        left: 50%; /* 6 columns */\r\n    }\r\n\r\n    .sidebar-offcanvas {\r\n        position: absolute;\r\n        top: 0;\r\n        width: 50%; /* 6 columns */\r\n    }\r\n}\r\n\r\n.bg-inverse {\r\n    background-color: #373a3c!important;\r\n}\r\n\r\n", ""]);
 
 	// exports
 
@@ -50143,6 +50162,7 @@
 
 	'use strict';
 
+	__webpack_require__(40);
 	__webpack_require__(19);
 	function menuFct() {
 	    function ProfilController(ProfilFactory) {
@@ -50505,6 +50525,151 @@
 	}
 	ProjetsControllerFct.$inject = ['ProjetsFactory'];
 	angular.module('myApp').controller('ProjetsController', ProjetsControllerFct);
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(27);
+	function LoisirsControllerFct(LoisirsFactory) {
+	    var LoiCtrl = this;
+	    LoisirsFactory.getListe().then(function (res) {
+	        LoiCtrl.listeLoisir = res.data.listeLoisir;
+	        LoiCtrl.titleLoisirs = res.data.title;
+	    }, function (err) {
+	        console.log(err);
+	    });
+	}
+	LoisirsControllerFct.$inject = ['LoisirsFactory'];
+	angular.module('myApp').controller('LoisirsController', LoisirsControllerFct);
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(26);
+	function LanguesControllerFct(LanguesFactory) {
+	    var LgCtrl = this;
+	    LanguesFactory.getListe().then(function (res) {
+	        LgCtrl.listeLg = res.data.listeLg;
+	        LgCtrl.titleLangues = res.data.title;
+	    }, function (err) {
+	        console.log(err);
+	    });
+	}
+	LanguesControllerFct.$inject = ['LanguesFactory'];
+	angular.module('myApp').controller('LanguesController', LanguesControllerFct);
+
+/***/ },
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(41);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(11)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./profil.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./profil.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(5)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".card {\r\n    padding-top: 20px;\r\n    margin: 10px 0 20px 0;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n    border-top-width: 0;\r\n    border-bottom-width: 2px;\r\n    -webkit-border-radius: 3px;\r\n    -moz-border-radius: 3px;\r\n    border-radius: 3px;\r\n    -webkit-box-shadow: none;\r\n    -moz-box-shadow: none;\r\n    box-shadow: none;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card .card-heading {\r\n    padding: 0 20px;\r\n    margin: 0;\r\n}\r\n\r\n.card .card-heading.simple {\r\n    font-size: 20px;\r\n    font-weight: 300;\r\n    color: #777;\r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.card .card-heading.image img {\r\n    display: inline-block;\r\n    width: 46px;\r\n    height: 46px;\r\n    margin-right: 15px;\r\n    vertical-align: top;\r\n    border: 0;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header h3 {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    color: #262626;\r\n}\r\n\r\n.card .card-heading.image .card-heading-header span {\r\n    font-size: 12px;\r\n    color: #999999;\r\n}\r\n\r\n.card .card-body {\r\n    padding: 0 20px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.card .card-media {\r\n    padding: 0 20px;\r\n    margin: 0 -14px;\r\n}\r\n\r\n.card .card-media img {\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n.card .card-actions {\r\n    min-height: 30px;\r\n    padding: 0 20px 20px 20px;\r\n    margin: 20px 0 0 0;\r\n}\r\n\r\n.card .card-comments {\r\n    padding: 20px;\r\n    margin: 0;\r\n    background-color: #f8f8f8;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle {\r\n    padding: 0;\r\n    margin: 0 20px 12px 20px;\r\n}\r\n\r\n.card .card-comments .comments-collapse-toggle a,\r\n.card .card-comments .comments-collapse-toggle span {\r\n    padding-right: 5px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    color: #999;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n}\r\n\r\n.card-comments .media-heading {\r\n    font-size: 13px;\r\n    font-weight: bold;\r\n}\r\n\r\n.card.people {\r\n    position: relative;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 300px;\r\n    padding-top: 0;\r\n    margin-left: 20px;\r\n    overflow: hidden;\r\n    vertical-align: top;\r\n}\r\n\r\n.card.people:first-child {\r\n    margin-left: 0;\r\n}\r\n\r\n.card.people .card-top {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 170px;\r\n    height: 150px;\r\n    background-color: #ffffff;\r\n}\r\n\r\n.card.people .card-top.green {\r\n    background-color: #53a93f;\r\n}\r\n\r\n.card.people .card-top.blue {\r\n    background-color: #427fed;\r\n}\r\n\r\n.card.people .card-info {\r\n    position: absolute;\r\n    top: 150px;\r\n    display: inline-block;\r\n    width: 100%;\r\n    height: 101px;\r\n    overflow: hidden;\r\n    background: #ffffff;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.people .card-info .title {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    line-height: 18px;\r\n    color: #404040;\r\n}\r\n\r\n.card.people .card-info .desc {\r\n    display: block;\r\n    margin: 8px 14px 0 14px;\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.people .card-bottom {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: inline-block;\r\n    width: 100%;\r\n    padding: 10px 20px;\r\n    line-height: 29px;\r\n    text-align: center;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card.hovercard {\r\n    position: relative;\r\n    padding-top: 0;\r\n    overflow: hidden;\r\n    text-align: center;\r\n    background-color: rgba(214, 224, 226, 0.2);\r\n}\r\n\r\n.card.hovercard .cardheader {\r\n    /*    background: url(\"../../images/webpack.jpg\");*/\r\n    background-size: cover;\r\n    height: 47px;\r\n}\r\n\r\n.card.hovercard .avatar {\r\n    position: relative;\r\n    top: -50px;\r\n    margin-bottom: -50px;\r\n}\r\n\r\n.card.hovercard .avatar img {\r\n    width: 100px;\r\n    height: 100px;\r\n    max-width: 100px;\r\n    max-height: 100px;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    border-radius: 50%;\r\n    border: 5px solid rgba(255,255,255,0.5);\r\n}\r\n\r\n.card.hovercard .info {\r\n    padding: 4px 8px 10px;\r\n}\r\n\r\n.card.hovercard .info .title {\r\n    margin-bottom: 4px;\r\n    font-size: 24px;\r\n    line-height: 1;\r\n    color: #262626;\r\n    vertical-align: middle;\r\n}\r\n\r\n.card.hovercard .info .desc {\r\n    overflow: hidden;\r\n    font-size: 12px;\r\n    line-height: 20px;\r\n    color: #737373;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.card.hovercard .bottom {\r\n    padding: 0 20px;\r\n    margin-bottom: 17px;\r\n}\r\n\r\n.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }\r\n\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(43);
+	__webpack_require__(25);
+	function ContactControllerFct(ContactFactory) {
+
+	    var ContCtrl = this;
+	    ContactFactory.getListe().then(function (res) {
+	        ContCtrl.listeContact = res.data.listeCont;
+	        ContCtrl.titleContact = res.data.title;
+	    }, function (err) {
+	        console.log(err);
+	    });
+	}
+	ContactControllerFct.$inject = ['ContactFactory'];
+	angular.module('myApp').controller('ContactController', ContactControllerFct);
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(44);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(11)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./contact.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./contact.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(5)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".red{\r\n    color:red;\r\n}\r\n.form-area\r\n{\r\n    background-color: #FAFAFA;\r\n    padding: 10px 40px 60px;\r\n    margin: 10px 0px 60px;\r\n    border: 1px solid GREY;\r\n}", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

@@ -1,15 +1,13 @@
 'use strict';
-require("./loisirs.services");
-function LoisirsControllerFct(LoisirsFactory){
-
-    var ContCtrl=this;
+require("./langues.services");
+function LanguesControllerFct(LanguesFactory){
+    var LgCtrl=this;
     LanguesFactory.getListe().then(function(res){
-        ContCtrl.listeLg=res.data.listeLg;
-        ContCtrl.titleContact=res.data.title;
+        LgCtrl.listeLg=res.data.listeLg;
+        LgCtrl.titleLangues=res.data.title;
     },function (err) {
         console.log(err);
     });
-
 }
-LoisirsControllerFct.$inject=['LoisirsFactory'];
-angular.module('myApp').controller('LoisirsController',LoisirsControllerFct );
+LanguesControllerFct.$inject=['LanguesFactory'];
+angular.module('myApp').controller('LanguesController',LanguesControllerFct );

@@ -36,3 +36,4 @@ require("./app/comun/profil/profil.directives");
 require("./app/comun/menu.directives");
 require("./app/accueil/accueil.controller");
 require("./app/formations/formation.controller");
+require("./app/experiences/experiences.controller");

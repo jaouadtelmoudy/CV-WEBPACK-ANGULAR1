@@ -26,7 +26,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'experiences/liste.html',
             controller:'ExperiencesController',
             controllerAs:'ExpCtrl'
-        });
+        })
+        .state('projets', {
+            url: '/projets',
+            templateUrl: 'projets/liste.html',
+            controller:'ProjetsController',
+            controllerAs:'PrjCtrl'
+    });
 
 
 });
@@ -37,3 +43,4 @@ require("./app/comun/menu.directives");
 require("./app/accueil/accueil.controller");
 require("./app/formations/formation.controller");
 require("./app/experiences/experiences.controller");
+require("./app/projets/projets.controller");

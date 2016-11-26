@@ -69,6 +69,11 @@
 	        templateUrl: 'experiences/liste.html',
 	        controller: 'ExperiencesController',
 	        controllerAs: 'ExpCtrl'
+	    }).state('projets', {
+	        url: '/projets',
+	        templateUrl: 'projets/liste.html',
+	        controller: 'ProjetsController',
+	        controllerAs: 'PrjCtrl'
 	    });
 	});
 
@@ -78,6 +83,7 @@
 	__webpack_require__(21);
 	__webpack_require__(29);
 	__webpack_require__(30);
+	__webpack_require__(31);
 
 /***/ },
 /* 1 */
@@ -50478,6 +50484,27 @@
 	}
 	ExperiencesControllerFct.$inject = ['ExperienceFactory'];
 	angular.module('myApp').controller('ExperiencesController', ExperiencesControllerFct);
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(28);
+
+	function ProjetsControllerFct(ProjetsFactory) {
+
+	    var PrjCtrl = this;
+	    ProjetsFactory.getListe().then(function (res) {
+	        PrjCtrl.listeProjets = res.data.listeProjets;
+	        PrjCtrl.titleProjets = res.data.title;
+	    }, function (err) {
+	        console.log(err);
+	    });
+	}
+	ProjetsControllerFct.$inject = ['ProjetsFactory'];
+	angular.module('myApp').controller('ProjetsController', ProjetsControllerFct);
 
 /***/ }
 /******/ ]);

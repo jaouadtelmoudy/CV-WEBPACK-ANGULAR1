@@ -77,6 +77,7 @@
 	__webpack_require__(20);
 	__webpack_require__(21);
 	__webpack_require__(29);
+	__webpack_require__(30);
 
 /***/ },
 /* 1 */
@@ -50456,6 +50457,27 @@
 	}
 	FormationControllerFct.$inject = ['FormationFactory'];
 	angular.module('myApp').controller('FormationController', FormationControllerFct);
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(24);
+
+	function ExperiencesControllerFct(ExperienceFactory) {
+
+	    var ExpCtrl = this;
+	    ExperienceFactory.getListe().then(function (res) {
+	        ExpCtrl.listeExperiences = res.data.listeExp;
+	        ExpCtrl.titleExperiences = res.data.title;
+	    }, function (err) {
+	        console.log(err);
+	    });
+	}
+	ExperiencesControllerFct.$inject = ['ExperienceFactory'];
+	angular.module('myApp').controller('ExperiencesController', ExperiencesControllerFct);
 
 /***/ }
 /******/ ]);

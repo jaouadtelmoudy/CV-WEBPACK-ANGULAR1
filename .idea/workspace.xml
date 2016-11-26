@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec0f34a-3bf5-48de-82bf-9f2d33ed129c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comun/profil/profil.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/contact/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/contact/liste.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/langues/liste.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/loisirs/liste.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bundle.js" afterPath="$PROJECT_DIR$/app/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comun/menu.html" afterPath="$PROJECT_DIR$/app/comun/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comun/profil/data.json" afterPath="$PROJECT_DIR$/app/comun/profil/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comun/profil/liste.html" afterPath="$PROJECT_DIR$/app/comun/profil/liste.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comun/profil/profil.directives.js" afterPath="$PROJECT_DIR$/app/comun/profil/profil.directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/contact/contact.controller.js" afterPath="$PROJECT_DIR$/app/contact/contact.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/experiences/data.json" afterPath="$PROJECT_DIR$/app/experiences/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/langues/langues.controller.js" afterPath="$PROJECT_DIR$/app/langues/langues.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/loisirs/data.json" afterPath="$PROJECT_DIR$/app/loisirs/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/loisirs/loisirs.controller.js" afterPath="$PROJECT_DIR$/app/loisirs/loisirs.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comun/profil/profil.css" afterPath="$PROJECT_DIR$/app/comun/profil/profil.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/contact/contact.css" afterPath="$PROJECT_DIR$/app/contact/contact.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/contact/liste.html" afterPath="$PROJECT_DIR$/app/contact/liste.html" />
     </list>
     <ignored path="CV-WEBPACK-ANGULAR1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,12 +31,32 @@
       <file leaf-file-name="liste.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/contact/liste.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
               <folding>
                 <element signature="n#style#0;n#br#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/comun/profil/liste.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profil.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/comun/profil/profil.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="241" column="75" selection-start-line="241" selection-start-column="75" selection-end-line="241" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,8 +94,8 @@
       <file leaf-file-name="contact.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/contact/contact.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,13 +139,13 @@
         <option value="$PROJECT_DIR$/app/comun/profil/data.json" />
         <option value="$PROJECT_DIR$/app/comun/profil/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/app/css/font-awesome.css" />
-        <option value="$PROJECT_DIR$/app/comun/profil/liste.html" />
         <option value="$PROJECT_DIR$/app/css/style.css" />
-        <option value="$PROJECT_DIR$/app/comun/profil/profil.css" />
         <option value="$PROJECT_DIR$/app/comun/profil/profil.directives.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/app/contact/contact.css" />
         <option value="$PROJECT_DIR$/app/contact/contact.controller.js" />
+        <option value="$PROJECT_DIR$/app/comun/profil/profil.css" />
+        <option value="$PROJECT_DIR$/app/comun/profil/liste.html" />
+        <option value="$PROJECT_DIR$/app/contact/contact.css" />
         <option value="$PROJECT_DIR$/app/contact/liste.html" />
       </list>
     </option>
@@ -227,7 +235,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
+              <option name="myItemId" value="comun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CV-WEBPACK-ANGULAR1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CV-WEBPACK-ANGULAR1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profil" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,12 +342,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480097072770</updated>
-      <workItem from="1480097074481" duration="11256000" />
+      <workItem from="1480097074481" duration="12129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11256000" />
+    <option name="totallyTimeSpent" value="12129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -574,26 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/comun/profil/liste.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/comun/profil/profil.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -622,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/contact/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/contact/contact.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -638,10 +644,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/comun/profil/profil.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="241" column="75" selection-start-line="241" selection-start-column="75" selection-end-line="241" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contact/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/comun/profil/liste.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/contact/liste.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
           <folding>
             <element signature="n#style#0;n#br#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />

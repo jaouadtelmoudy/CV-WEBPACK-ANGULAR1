@@ -1,4 +1,5 @@
 'use strict';
+require("./profil.css");
 require("./profil.service");
 function menuFct(){
     function ProfilController(ProfilFactory){

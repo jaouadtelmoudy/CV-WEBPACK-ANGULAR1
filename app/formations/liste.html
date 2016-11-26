@@ -1,45 +1,37 @@
 <h2>{{FrmCtrl.titleFormation}}</h2>
 <p>&nbsp;</p>
 <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-repeat="frm in FrmCtrl.listeFormations | orderBy : '+dateOp'">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapse1">Collapsible
-                    Group 1</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapse{{$index+1}}">{{frm.intitule}}</a>
             </h4>
         </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapse2">Collapsible
-                    Group 2</a>
-            </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapse3">Collapsible
-                    Group 3</a>
-            </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div id="collapse{{$index+1}}" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xs-2">Etablissement</div>
+                    <div class="col-md-3 col-lg-3 col-xs-3">{{frm.etablissement}}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xs-2">Niveau</div>
+                    <div class="col-md-3 col-lg-3 col-xs-3">{{frm.niveau}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xs-2">Mention</div>
+                    <div class="col-md-3 col-lg-3 col-xs-3">{{frm.mention}}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xs-2">Date</div>
+                    <div class="col-md-3 col-lg-3 col-xs-3">{{frm.dateOp | date :'dd/MM/yyyy'}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xs-2">Description</div>
+                    <div class="col-md-3 col-lg-3 col-xs-3">{{frm.description}}</div>
+                </div>
+
             </div>
         </div>
     </div>
